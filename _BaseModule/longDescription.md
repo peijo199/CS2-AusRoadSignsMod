@@ -27,7 +27,7 @@ This mod uses Write Everywhere to add Australian road signs to your game.
 8. Choose the desired template and customize it. 
 
 ### Customize and Save Signs
-- Select the root object → **Save & Export as XML**  
+- Select the root object and click **Save & Export as XML**  
 - Templates can be reused in the same city or other saves.  
 - All templates are stored locally.
 - These don't need the step "Templates from mods"
@@ -35,7 +35,7 @@ This mod uses Write Everywhere to add Australian road signs to your game.
 ---
 
 ##  Requirements
-- [Write Everywhere](https://mods.paradoxplaza.com/mods/92908/Windows) – required  
+- [Write Everywhere](https://mods.paradoxplaza.com/mods/92908/Windows) (required)  
 - [Highway Sign Structures](https://mods.paradoxplaza.com/mods/113261/Windows)
 
 
