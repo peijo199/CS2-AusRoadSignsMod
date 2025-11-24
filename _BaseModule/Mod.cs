@@ -1,4 +1,4 @@
-﻿using BridgeWE;
+﻿using AU_Road_signs_mod.WEBridge;
 using Colossal.IO.AssetDatabase;
 using Colossal.Logging;
 using Game;
@@ -11,7 +11,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace AU_Assets_mod
+namespace AU_Road_signs_mod
 {
     public class Mod : IMod
     {
@@ -26,6 +26,23 @@ namespace AU_Assets_mod
                 log.Info($"Current mod asset at {asset.path}");
 
             GameManager.instance.RegisterUpdater(DoWhenLoaded);
+
+        }
+
+        private void CopyAtlasFiles()
+        {
+            string Atlases = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Resources\atlases");
+            string appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string AusRoadSigns = Path.GetFullPath(Path.Combine(appData, @"..\LocalLow\Colossal Order\Cities Skylines II\ModsData\Klyte45Mods\WriteEverywhere\imageAtlases"));
+            Directory.CreateDirectory(AusRoadSigns);
+            string[] atlasFiles = Directory.GetFiles(Atlases, "*.png");
+            foreach (string atlasFile in atlasFiles)
+            {
+                string atlasFileName = Path.GetFileName(atlasFile);
+                string atlasPath = Path.Combine(AusRoadSigns, atlasFileName);
+
+                File.Copy(atlasFile, atlasPath, overwrite: true);
+            }
         }
 
         private void DoWhenLoaded()
@@ -51,6 +68,7 @@ namespace AU_Assets_mod
                     WEImageManagementBridge.RegisterImageAtlas(typeof(Mod).Assembly, Path.GetFileName(atlasFolder), Directory.GetFiles(atlasFolder, "*.png"));
                 }
             }
+
 
             var layoutsDirectory = Path.Combine(modDir, "layouts");
             WETemplatesManagementBridge.RegisterCustomTemplates(typeof(Mod).Assembly, layoutsDirectory);

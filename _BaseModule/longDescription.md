@@ -22,7 +22,7 @@ This mod uses Write Everywhere to add Australian road signs to your game.
 4. Open the **Write Everywhere** menu (Default: `CTRL + Shift + W`).
 4. Click on the structure you wanna edit.  
 5. Click on `Import layout from xml at root...`
-6. Click on the puzzle-piece(*Templates from mods*)
+6. Click on the puzzle piece(*Templates from mods*)
 7. Search for the AU Road signs mod.
 8. Choose the desired template and customize it. 
 
