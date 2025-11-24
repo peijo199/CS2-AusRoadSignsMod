@@ -1,0 +1,24 @@
+<Publish>
+  <ModId Value="" />
+  <DisplayName Value="Aus Road Signs" />
+  <ShortDescription Value="A WriteEverywhere Module to place and edit Australian road signs" />
+  <LongDescription>This project can be used to generate modules for Write Everywhere (Cities Skylines 2 version). You can share text placement layouts (default and city-importable), atlases and fonts (beware the copyrights!).
+
+More instructions about how to use this project is under the _BaseModule folder. Don't forget renaming your project/solution after creating it from this template.</LongDescription>
+  <Thumbnail Value="Properties/Thumbnail.png" />
+  <ForumLink Value="" />
+  <ModVersion Value="1.0" />
+  <GameVersion Value="1.*" />
+  <ChangeLog>Initial Release</ChangeLog>
+  <Tag Value="Code Mod" />
+  <Screenshot Value="Screenshots\Screenshot_1.jpg" />
+  <Screenshot Value="Screenshots\Screenshot_2.jpg" />
+  <Screenshot Value="Screenshots\Screenshot_3.jpg" />
+  <Screenshot Value="Screenshots\Screenshot_4.jpg" />
+  <Screenshot Value="Screenshots\Screenshot_5.jpg" />
+  <Screenshot Value="Screenshots\Screenshot_6.jpg" />
+  <Screenshot Value="Screenshots\Screenshot_7.jpg" />
+  <Screenshot Value="Screenshots\Screenshot_8.jpg" />
+  <Dependency Id="92908" ModVersion="" DisplayName="Write Everywhere" />
+  <Dependency Id="113261" ModVersion="" DisplayName="Highway Sign Structures" />
+</Publish>
