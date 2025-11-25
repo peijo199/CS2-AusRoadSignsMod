@@ -29,22 +29,6 @@ namespace AU_Road_signs_mod
 
         }
 
-        private void CopyAtlasFiles()
-        {
-            string Atlases = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Resources\atlases");
-            string appData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string AusRoadSigns = Path.GetFullPath(Path.Combine(appData, @"..\LocalLow\Colossal Order\Cities Skylines II\ModsData\Klyte45Mods\WriteEverywhere\imageAtlases"));
-            Directory.CreateDirectory(AusRoadSigns);
-            string[] atlasFiles = Directory.GetFiles(Atlases, "*.png");
-            foreach (string atlasFile in atlasFiles)
-            {
-                string atlasFileName = Path.GetFileName(atlasFile);
-                string atlasPath = Path.Combine(AusRoadSigns, atlasFileName);
-
-                File.Copy(atlasFile, atlasPath, overwrite: true);
-            }
-        }
-
         private void DoWhenLoaded()
         {
             log.Info($"Loading patches");
@@ -136,3 +120,4 @@ namespace AU_Road_signs_mod
         }
     }
 }
+
