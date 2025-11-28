@@ -9,7 +9,7 @@
       <arrayInstances x="1" y="1" z="1" />
       <arraySpacing x="0" y="0" z="0" />
     </transform>
-    <imageMesh atlas="AusRoadSigns">
+    <imageMesh atlas="AU Road signs mod">
       <mesh></mesh>
       <image>speedlimit_100</image>
     </imageMesh>
@@ -37,7 +37,7 @@
         <arrayInstances x="1" y="1" z="1" />
         <arraySpacing x="0" y="0" z="0" />
       </transform>
-      <imageMesh atlas="AusRoadSigns">
+      <imageMesh atlas="AU Road signs mod">
         <mesh></mesh>
         <image>vertical_back</image>
       </imageMesh>
@@ -55,4 +55,5 @@
       </defaultStyle>
     </self>
   </children>
+
 </WELayout>
